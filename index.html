@@ -4,16 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zyra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Comenzando Git</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quam non tenetur? Cumque inventore, 
-       maiores possimus corrupti quam repudiandae, eveniet perferendis hic suscipit neque sit assumenda ab 
-       similique sint architecto.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quam non tenetur? Cumque inventore, 
-       maiores possimus corrupti quam repudiandae, eveniet perferendis hic suscipit neque sit assumenda ab 
-       similique sint architecto.
-     </p>
+    <header>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <h1>Zyra</h1>
+                </div>
+                <div class="col-auto">
+                    <div class="avatar-container" data-toggle="modal" data-target="#profileOptions">
+                        <img src="img/avatar.jpg" alt=""></img>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Modal -->
+        <div class="modal fade" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Opciones</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="profile-options-list">
+                            <li><a href=""><i class="fas fa-user"></i>Mi perfil</a></li>
+                            <li><a href=""><i class="fas fa-user"></i>Mis direcciones</a></li>
+                            <li><a href=""><i class="fas fa-user"></i>Mis tarjetas</a></li>
+                            <li><a href="" class="text-danger"><i class="fas fa-user"></i>Cerrar Cesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
